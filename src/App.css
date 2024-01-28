@@ -1,1 +1,76 @@
 
+/* Overall layout */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navigation */
+  nav {
+    font-size: larger;
+    font-weight:900;
+    background-color: #4233a4;
+    color: #f086dd;
+    padding: 10px;
+    text-align: center;
+   
+
+  }
+  
+  nav a {
+    color: inherit;
+    text-decoration: dotted;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    background-color: #ad5ddf;
+  }
+  
+  /* Main content area */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    font-weight:900;
+    background-color: #4233a4;
+    color: #f086dd;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    text-align: center;
+  }
+
+  .App {
+    background-color: #687ebb;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color: #1f101c;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  

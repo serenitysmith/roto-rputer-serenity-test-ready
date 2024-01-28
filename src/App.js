@@ -12,7 +12,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/About">About</Link>
         <Link to="/Services">Services</Link>
-        <Link to="/Contact">Contact</Link>
+        <Link to="/Contact" className='con'>Contact</Link>
       </nav>
       <Routes>
         <Route index path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <footer>
-        PIPES R' US
+       Serenity's  Rotor Router at Yo Service..🤨  🚰
       </footer>
     </div>
   )
