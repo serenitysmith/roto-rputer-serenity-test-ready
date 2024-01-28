@@ -1,23 +1,32 @@
-import React from 'react';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import Nav from './components/Nav';
-import {Routes, Route} from 'react-router-dom';
+import './App.css';
+import { Link, Route, Routes } from "react-router-dom"
+import Home from "./components/Home"
+import About from "./components/About"
+import Services from "./components/Services"
+import Contact from "./components/Contact"
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Services">Services</Link>
+        <Link to="/Contact">Contact</Link>
+      </nav>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/services' element={<Services/>}/>
+        <Route index path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+      <footer>
+        PIPES R' US
+      </footer>
     </div>
-  );
+  )
 }
 
 export default App;
+
+
